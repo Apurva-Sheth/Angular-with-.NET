@@ -1,0 +1,18 @@
+<h1 id="tableLabel">List of Departments</h1>
+
+<p>This component demonstrates fetching the data from the API</p>
+
+<table class="table table-striped" aria-labelledby="tableLabel" *ngIf="departments">
+  <thead>
+    <tr>
+      <th>Department Id</th>
+      <th>Department Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dept of departments">
+      <td>{{ dept.departmentId }}</td>
+      <td>{{ dept.departmentName }}</td>
+    </tr>
+  </tbody>
+</table>
